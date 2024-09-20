@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   <link href="/common/css/style.css" rel="stylesheet" >
+<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>AFTER PAY_Shopping List</title>
@@ -162,3 +163,11 @@
 <%@include file="../common/footer.jsp"%>
 </body>
 </html>
+=======
+  <title>AFTER PAY</title>
+</head>
+<body>
+
+</body>
+</html>
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a

@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 <%@ page import="com.jhta.afterpay.user.dao.QnaDao" %>
 <%@ page import="com.jhta.afterpay.user.vo.Qna" %>
 <%@ page import="java.util.List" %>
+=======
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 <%@ page contentType="text/html;charset=utf-8" pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html>
@@ -13,6 +16,7 @@
   <link href="/common/css/style.css" rel="stylesheet" >
   <title>AFTER PAY</title>
 </head>
+<<<<<<< HEAD
 <style>
   h2{
     text-align: center;
@@ -139,5 +143,9 @@
   </div>
 </div>
 <%@include file="../common/footer.jsp"%>
+=======
+<body>
+
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 </body>
 </html>

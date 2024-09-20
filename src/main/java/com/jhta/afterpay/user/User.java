@@ -1,5 +1,9 @@
 package com.jhta.afterpay.user;
 
+<<<<<<< HEAD
+=======
+import java.awt.*;
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 import java.util.Date;
 
 public class User {
@@ -12,11 +16,19 @@ public class User {
     private String isBanned;
     private String isSignOut;
     private int point;
+<<<<<<< HEAD
     private int totalPoint;
     private int totalUsedPoint;
     private Date createdDate;
     private String gradeId;
 
+=======
+    private Date createdDate;
+    private String gradeId;
+
+    public User() {
+    }
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 
     @Override
     public String toString() {
@@ -30,13 +42,17 @@ public class User {
                 ", isBanned='" + isBanned + '\'' +
                 ", isSignOut='" + isSignOut + '\'' +
                 ", point=" + point +
+<<<<<<< HEAD
                 ", totalPoint=" + totalPoint +
                 ", totalUsedPoint=" + totalUsedPoint +
+=======
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
                 ", createdDate=" + createdDate +
                 ", gradeId='" + gradeId + '\'' +
                 '}';
     }
 
+<<<<<<< HEAD
     public int getTotalPoint() {
         return totalPoint;
     }
@@ -56,6 +72,8 @@ public class User {
     public User() {
     }
 
+=======
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
     public int getNo() {
         return no;
     }
@@ -143,5 +161,8 @@ public class User {
     public void setGradeId(String gradeId) {
         this.gradeId = gradeId;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 }

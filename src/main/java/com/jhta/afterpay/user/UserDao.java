@@ -1,15 +1,22 @@
 package com.jhta.afterpay.user;
 
+<<<<<<< HEAD
 import com.jhta.afterpay.user.User;
 import com.jhta.afterpay.user.PointHistory;
 import com.jhta.afterpay.user.User;
+=======
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 import com.jhta.afterpay.util.DaoHelper;
 
 import java.sql.SQLException;
 
 public class UserDao {
 
+<<<<<<< HEAD
     public void InsertUser(User user) throws SQLException {
+=======
+    public void InsertUser(User user) throws SQLException{
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
         String sql = """
                 insert into users
                 (user_no,user_email,user_id,user_password,user_name,user_tel)
@@ -17,10 +24,17 @@ public class UserDao {
                 (user_no_seq.nextval,?,?,?,?,?)
                 """;
 
+<<<<<<< HEAD
         DaoHelper.insert(sql, user.getEmail(), user.getId(), user.getPwd(), user.getName(), user.getTel());
     }
 
     public User getUserById(String id) throws SQLException {
+=======
+        DaoHelper.insert(sql,user.getEmail(),user.getId(),user.getPwd(),user.getName(),user.getTel());
+    }
+
+    public User getUserById(String id) throws  SQLException{
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
         String sql = """
                 select *
                 from users
@@ -37,6 +51,7 @@ public class UserDao {
             user.setTel(rs.getString("user_tel"));
             user.setIsBanned(rs.getString("isbanned"));
             user.setIsSignOut(rs.getString("issignout"));
+<<<<<<< HEAD
             user.setCreatedDate(rs.getDate("created_date"));
             user.setGradeId(rs.getString("grade_id"));
             user.setPoint(rs.getInt("point"));
@@ -93,4 +108,13 @@ public class UserDao {
                 """;
         return DaoHelper.selectOneInt(sql, userNo);
     }
+=======
+            user.setPoint(rs.getInt("point"));
+            user.setCreatedDate(rs.getDate("created_date"));
+            user.setGradeId(rs.getString("grade_id"));
+            return user;
+
+        }, id);
+    }
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 }

@@ -10,6 +10,7 @@
   <link href="/common/css/style.css" rel="stylesheet" >
   <title>AFTER PAY</title>
 </head>
+<<<<<<< HEAD
 <style>
   h2{
     text-align: center;
@@ -129,5 +130,9 @@
   }
 </script>
 <%@include file="../common/footer.jsp"%>
+=======
+<body>
+
+>>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 </body>
 </html>
