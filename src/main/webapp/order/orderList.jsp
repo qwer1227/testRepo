@@ -78,7 +78,7 @@
                 %>
                 <%
                     //주문 번호
-                    for (Order order : orders) {
+                    for (Order com.jhta.afterpay.order : orders) {
                 %>
                 <tr>
                     <td><a href="orderDetail.jsp?orderNo=<%=order.getNo()%>&page=<%=pageNo %>"><%=order.getNo()%></a></td>

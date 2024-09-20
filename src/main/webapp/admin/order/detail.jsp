@@ -34,7 +34,7 @@
 
         // 요청파라미터로 전달받은 회원번호에 해당하는 회원 상세정보를 조회한다.
         OrderDao orderDao = new OrderDao();
-        Order order = orderDao.getOrderByNo(orderNo);
+        Order com.jhta.afterpay.order = orderDao.getOrderByNo(orderNo);
     %>
     <table class="table table-bordered">
         <colgroup>

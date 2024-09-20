@@ -75,7 +75,7 @@
                     </thead>
                     <tbody>
                     <%
-                        for (Order order :orders) {
+                        for (Order com.jhta.afterpay.order :orders) {
                     %>
                     <tr>
                         <td><%=order.getNo()%></td>

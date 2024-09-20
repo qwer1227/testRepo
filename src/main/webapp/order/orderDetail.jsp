@@ -31,7 +31,7 @@
   // 조회할 상품 정보
 //  int orderNo = Integer.parseInt(request.getParameter("orderNo"));
   OrderDao orderDao = new OrderDao();
-  Order order = orderDao.getOrderByNo(8);
+  Order com.jhta.afterpay.order = orderDao.getOrderByNo(8);
   AddrDao addrDao = new AddrDao();
   User user = new User();
   user.setNo(7);

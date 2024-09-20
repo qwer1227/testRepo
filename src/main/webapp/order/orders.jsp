@@ -33,7 +33,7 @@
 <%
   int userNo = Utils.toInt(request.getParameter("no"));
   OrderDao orderDao = new OrderDao();
-//  List<Order> order = orderDao.getOrderByNo(userNo);
+//  List<Order> com.jhta.afterpay.order = orderDao.getOrderByNo(userNo);
 %>
 <div class="container">
   <div class="container">

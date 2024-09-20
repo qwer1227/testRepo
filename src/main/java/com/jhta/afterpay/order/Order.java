@@ -1,4 +1,4 @@
-package order;
+package com.jhta.afterpay.order;
 
 import com.jhta.afterpay.addr.Addr;
 import com.jhta.afterpay.product.Product;

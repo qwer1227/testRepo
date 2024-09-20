@@ -71,7 +71,7 @@
 
 
     // 주문정보 저장
-    Order order = new Order();
+    Order com.jhta.afterpay.order = new Order();
     order.setPrice(totalPrice);
     order.setAmount(1);
     order.setDeliveryPrice(deliveryPrice);

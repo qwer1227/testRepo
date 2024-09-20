@@ -1,7 +1,6 @@
-package order;
+package com.jhta.afterpay.order;
 
 import com.jhta.afterpay.addr.Addr;
-import com.jhta.afterpay.product.Product;
 import com.jhta.afterpay.user.User;
 import com.jhta.afterpay.util.DaoHelper;
 
