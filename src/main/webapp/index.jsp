@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <title>AfterPay</title>
 =======
 >>>>>>> 1916f1e210cee1b462d9151eba7c18833043eb2c
