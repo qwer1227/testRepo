@@ -1,4 +1,4 @@
-package com.jhta.afterpay.order;
+package order;
 
 import com.jhta.afterpay.addr.Addr;
 import com.jhta.afterpay.product.Product;
@@ -19,13 +19,14 @@ public class Order {
     private int paymentPrice;
     private int deliveryStatus;
     private int depositPoint;
-    private String deliveryMessage;
     private Addr addr;
     private User user;
     private List<Product> Products;
 
     public Order() {
     }
+
+
 
     public int getNo() {
         return no;
@@ -99,10 +100,6 @@ public class Order {
         this.paymentPrice = paymentPrice;
     }
 
-    public void setDeliveryMessage(String deliveryMessage) {
-        this.deliveryMessage = deliveryMessage;
-    }
-
     public int getDeliveryStatus() {
         return deliveryStatus;
     }
@@ -127,14 +124,6 @@ public class Order {
         this.depositPoint = depositPoint;
     }
 
-    public String getDeliveryMessage() {
-        return deliveryMessage;
-    }
-
-    public void getDeliveryMessage(String deliveryMessage) {
-        this.deliveryMessage = deliveryMessage;
-    }
-
     public User getUser() {
         return user;
     }
@@ -150,5 +139,4 @@ public class Order {
     public void setProducts(List<Product> products) {
         Products = products;
     }
-
 }

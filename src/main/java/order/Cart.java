@@ -1,4 +1,4 @@
-package com.jhta.afterpay.order;
+package order;
 
 import com.jhta.afterpay.delivery.Stock;
 import com.jhta.afterpay.product.Product;
