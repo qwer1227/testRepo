@@ -1,12 +1,12 @@
 package com.jhta.afterpay.product;
 
-public class Stock {
+public class Image {
     private int no;
-    private String size;
-    private int amount;
+    private String name;
+    private String thumb;
     private int productNo;
 
-    public Stock() {}
+    public Image() {}
 
     public int getNo() {
         return no;
@@ -16,20 +16,20 @@ public class Stock {
         this.no = no;
     }
 
-    public String getSize() {
-        return size;
+    public String getName() {
+        return name;
     }
 
-    public void setSize(String size) {
-        this.size = size;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getAmount() {
-        return amount;
+    public String getThumb() {
+        return thumb;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setThumb(String thumb) {
+        this.thumb = thumb;
     }
 
     public int getProductNo() {
@@ -42,10 +42,10 @@ public class Stock {
 
     @Override
     public String toString() {
-        return "Stock{" +
+        return "Image{" +
                 "no=" + no +
-                ", size='" + size + '\'' +
-                ", amount=" + amount +
+                ", name='" + name + '\'' +
+                ", thumb='" + thumb + '\'' +
                 ", productNo=" + productNo +
                 '}';
     }

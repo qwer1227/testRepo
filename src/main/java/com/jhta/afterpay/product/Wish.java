@@ -1,12 +1,11 @@
 package com.jhta.afterpay.product;
 
-public class Stock {
+public class Wish {
     private int no;
-    private String size;
-    private int amount;
     private int productNo;
+    private int userNo;
 
-    public Stock() {}
+    public Wish() {}
 
     public int getNo() {
         return no;
@@ -14,22 +13,6 @@ public class Stock {
 
     public void setNo(int no) {
         this.no = no;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
     }
 
     public int getProductNo() {
@@ -40,13 +23,20 @@ public class Stock {
         this.productNo = productNo;
     }
 
+    public int getUserNo() {
+        return userNo;
+    }
+
+    public void setUserNo(int userNo) {
+        this.userNo = userNo;
+    }
+
     @Override
     public String toString() {
-        return "Stock{" +
+        return "Wish{" +
                 "no=" + no +
-                ", size='" + size + '\'' +
-                ", amount=" + amount +
                 ", productNo=" + productNo +
+                ", userNo=" + userNo +
                 '}';
     }
 }

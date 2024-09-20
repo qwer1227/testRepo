@@ -13,8 +13,7 @@ import java.util.List;
  */
 public class DaoHelper {
 	
-
-	private static final String url = "jdbc:oracle:thin:@54.180.232.31:1521:xe";
+	private static final String url =  "jdbc:oracle:thin:@54.180.232.31:1521:xe";
 	private static final String username = "afterpay";
 	private static final String password = "zxcv1234";
 	
@@ -28,7 +27,7 @@ public class DaoHelper {
 	
 	private DaoHelper() {}
 	
-	public static Connection getConnection() throws SQLException {
+	private static Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(url, username, password);
 	}
 	

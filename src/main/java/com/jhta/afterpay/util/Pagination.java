@@ -7,6 +7,9 @@ public class Pagination {
 	private final int pageNo;
 	private final int totalRows;
 	
+	private int totalPages;
+	private int totalBlocks;
+	
 	public Pagination(int pageNo, int totalRows) {
 		this.rowsPerPage = 10;
 		this.pagesPerPage = 5;
@@ -57,7 +60,8 @@ public class Pagination {
 	 * @return 현재 페이지 블록번호
 	 */
 	public int getCurrentPageBlock() {
-		return Utils.ceil(pageNo, pagesPerPage);
+		return Utils.ceil(pageNo, pagesPerPage);	
+	
 	}
 	
 	/**
@@ -69,11 +73,11 @@ public class Pagination {
 	}
 	
 	/**
-	 * 현재 페이지번호에 맞는 페이지 내비게이션의 끝페이지번호를 반환한다.
+	 * 현재 페이지번호에 맞는 페이지 내비게이션의 끝 페이지번호를 반환한다.
 	 * @return 페이지 끝번호
 	 */
 	public int getEndPage() {
-		return getCurrentPageBlock() == getTotalPageBlocks() 
+		return getCurrentPageBlock() == getTotalPageBlocks()
 				? getTotalPages()
 				: getCurrentPageBlock()*pagesPerPage;
 	}
@@ -87,13 +91,16 @@ public class Pagination {
 	}
 	
 	/**
-	 * 현재 페이지번호에 맞는 조회범위의 끝값을 반환한다.
+	 * 현재 페이지번호에 맞는 조회범위의 상한값을 반환한다.
 	 * @return 조회범위 끝값
 	 */
 	public int getEnd() {
-		return pageNo*rowsPerPage;
+		int end = pageNo*rowsPerPage;
+		if (pageNo == getTotalPages()) {
+			end = totalRows;
+		}
+		return end;
 	}
-	
 	/**
 	 * 현재 페이지가 첫번째 페이지인지 여부를 반환한다.
 	 * @return 현재 페이지가 첫번째 페이지이면 true를 반환한다.
@@ -103,8 +110,8 @@ public class Pagination {
 	}
 	
 	/**
-	 * 현재 페이지가 마지막페이지인지 여부를 반환한다.
-	 * @return 마지막 페이지이면 true를 반환한다.
+	 * 현재 페이지가 마지막 페이지인지 여부를 반환한다.
+	 * @return 마지막 페이지라면 true를 반환한다.
 	 */
 	public boolean isLast() {
 		return pageNo >= getTotalPages();
@@ -118,18 +125,8 @@ public class Pagination {
 		return pageNo - 1;
 	}
 	
-	/**
-	 * 현재 페이지의 다음 페이지번호를 반환한다.
-	 * @return 다음 페이지번호
-	 */
 	public int getNext() {
 		return pageNo + 1;
 	}
 	
 }
-
-
-
-
-
-
