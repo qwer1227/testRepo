@@ -1,7 +1,5 @@
 package com.jhta.afterpay.user;
 
-
-import java.awt.*;
 import java.util.Date;
 
 public class User {
@@ -14,8 +12,46 @@ public class User {
     private String isBanned;
     private String isSignOut;
     private int point;
+    private int totalPoint;
+    private int totalUsedPoint;
     private Date createdDate;
     private String gradeId;
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "no=" + no +
+                ", email='" + email + '\'' +
+                ", id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", tel='" + tel + '\'' +
+                ", isBanned='" + isBanned + '\'' +
+                ", isSignOut='" + isSignOut + '\'' +
+                ", point=" + point +
+                ", totalPoint=" + totalPoint +
+                ", totalUsedPoint=" + totalUsedPoint +
+                ", createdDate=" + createdDate +
+                ", gradeId='" + gradeId + '\'' +
+                '}';
+    }
+
+    public int getTotalPoint() {
+        return totalPoint;
+    }
+
+    public void setTotalPoint(int totalPoint) {
+        this.totalPoint = totalPoint;
+    }
+
+    public int getTotalUsedPoint() {
+        return totalUsedPoint;
+    }
+
+    public void setTotalUsedPoint(int totalUsedPoint) {
+        this.totalUsedPoint = totalUsedPoint;
+    }
 
     public User() {
     }
@@ -106,23 +142,6 @@ public class User {
 
     public void setGradeId(String gradeId) {
         this.gradeId = gradeId;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "no=" + no +
-                ", email='" + email + '\'' +
-                ", id='" + id + '\'' +
-                ", pwd='" + pwd + '\'' +
-                ", name='" + name + '\'' +
-                ", tel='" + tel + '\'' +
-                ", isBanned='" + isBanned + '\'' +
-                ", isSignOut='" + isSignOut + '\'' +
-                ", point=" + point +
-                ", createdDate=" + createdDate +
-                ", gradeId='" + gradeId + '\'' +
-                '}';
     }
 
 }

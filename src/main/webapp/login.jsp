@@ -1,5 +1,5 @@
-<%@ page import="com.jhta.afterpay.user.UserDao" %>
-<%@ page import="com.jhta.afterpay.user.User" %>
+<%@ page import="com.jhta.afterpay.user.dao.UserDao" %>
+<%@ page import="com.jhta.afterpay.user.vo.User" %>
 <%@ page import="org.apache.commons.codec.digest.DigestUtils" %>
 <%@ page contentType="text/html;charset=utf-8" pageEncoding="utf-8" %>
 
@@ -29,7 +29,6 @@
     session.setAttribute("USERNO", user.getNo());
     session.setAttribute("USERID", user.getId());
     session.setAttribute("USERNAME", user.getName());
-    session.setAttribute("GRADE",user.getGradeId());
 
     response.sendRedirect("/index.jsp");
 
