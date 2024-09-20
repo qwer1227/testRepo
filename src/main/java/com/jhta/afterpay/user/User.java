@@ -18,23 +18,6 @@ public class User {
     public User() {
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "no=" + no +
-                ", email='" + email + '\'' +
-                ", id='" + id + '\'' +
-                ", pwd='" + pwd + '\'' +
-                ", name='" + name + '\'' +
-                ", tel='" + tel + '\'' +
-                ", isBanned='" + isBanned + '\'' +
-                ", isSignOut='" + isSignOut + '\'' +
-                ", point=" + point +
-                ", createdDate=" + createdDate +
-                ", gradeId='" + gradeId + '\'' +
-                '}';
-    }
-
     public int getNo() {
         return no;
     }
@@ -123,4 +106,20 @@ public class User {
         this.gradeId = gradeId;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "no=" + no +
+                ", email='" + email + '\'' +
+                ", id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", tel='" + tel + '\'' +
+                ", isBanned='" + isBanned + '\'' +
+                ", isSignOut='" + isSignOut + '\'' +
+                ", point=" + point +
+                ", createdDate=" + createdDate +
+                ", gradeId='" + gradeId + '\'' +
+                '}';
+    }
 }
