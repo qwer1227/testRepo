@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<%@ page import="com.jhta.afterpay.user.vo.User" %>
-<%@ page import="com.jhta.afterpay.util.DaoHelper" %>
-<%@ page import="com.jhta.afterpay.user.dao.UserDao" %>
-=======
 <%@ page import="com.jhta.afterpay.user.User" %>
 <%@ page import="com.jhta.afterpay.util.DaoHelper" %>
 <%@ page import="com.jhta.afterpay.user.UserDao" %>
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 <%@ page import="org.apache.commons.codec.digest.DigestUtils" %>
 <%@ page contentType="text/html;charset=utf-8" pageEncoding="utf-8" %>
 <%--
@@ -44,17 +38,10 @@
 
 <%
     //요청파라미터값 저장
-<<<<<<< HEAD
     String id = request.getParameter("id");
     String name = request.getParameter("name");
     String pwd = request.getParameter("pwd");
     String email = request.getParameter("email");
-=======
-    String id = request.getParameter("user_id");
-    String name = request.getParameter("user_name");
-    String pwd = request.getParameter("user_pw");
-    String email = request.getParameter("user_email");
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
     String phone = request.getParameter("phone");
 
     //이미 생성된 아이디로 생성을 막기위해

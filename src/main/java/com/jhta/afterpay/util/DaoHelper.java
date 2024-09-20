@@ -27,7 +27,7 @@ public class DaoHelper {
 	
 	private DaoHelper() {}
 	
-	private static Connection getConnection() throws SQLException {
+	public static Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(url, username, password);
 	}
 	
@@ -311,9 +311,5 @@ public class DaoHelper {
 				pstmt.setDate(index++, v);
 			}
 		}
-<<<<<<< HEAD
-	}
-=======
 	}	
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 }

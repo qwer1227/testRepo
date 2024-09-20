@@ -1,22 +1,12 @@
 package com.jhta.afterpay.user;
 
-<<<<<<< HEAD
-import com.jhta.afterpay.user.User;
-import com.jhta.afterpay.user.PointHistory;
-import com.jhta.afterpay.user.User;
-=======
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 import com.jhta.afterpay.util.DaoHelper;
 
 import java.sql.SQLException;
 
 public class UserDao {
 
-<<<<<<< HEAD
-    public void InsertUser(User user) throws SQLException {
-=======
     public void InsertUser(User user) throws SQLException{
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
         String sql = """
                 insert into users
                 (user_no,user_email,user_id,user_password,user_name,user_tel)
@@ -24,17 +14,10 @@ public class UserDao {
                 (user_no_seq.nextval,?,?,?,?,?)
                 """;
 
-<<<<<<< HEAD
-        DaoHelper.insert(sql, user.getEmail(), user.getId(), user.getPwd(), user.getName(), user.getTel());
-    }
-
-    public User getUserById(String id) throws SQLException {
-=======
         DaoHelper.insert(sql,user.getEmail(),user.getId(),user.getPwd(),user.getName(),user.getTel());
     }
 
     public User getUserById(String id) throws  SQLException{
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
         String sql = """
                 select *
                 from users
@@ -51,64 +34,6 @@ public class UserDao {
             user.setTel(rs.getString("user_tel"));
             user.setIsBanned(rs.getString("isbanned"));
             user.setIsSignOut(rs.getString("issignout"));
-<<<<<<< HEAD
-            user.setCreatedDate(rs.getDate("created_date"));
-            user.setGradeId(rs.getString("grade_id"));
-            user.setPoint(rs.getInt("point"));
-
-            return user;
-        }, id);
-    }
-
-    public User getUserByNo(int userNo){
-        String sql = """
-                SELECT *
-                FROM USERS
-                WHERE USER_NO = ?
-                """;
-
-        return DaoHelper.selectOne(sql, rs -> {
-            User user = new User();
-
-            user.setNo(rs.getInt("user_no"));
-            user.setEmail(rs.getString("user_email"));
-            user.setId(rs.getString("user_id"));
-            user.setPwd(rs.getString("user_password"));
-            user.setName(rs.getString("user_name"));
-            user.setTel(rs.getString("user_tel"));
-            user.setIsBanned(rs.getString("isbanned"));
-            user.setIsSignOut(rs.getString("issignout"));
-            user.setCreatedDate(rs.getDate("created_date"));
-            user.setGradeId(rs.getString("grade_id"));
-            user.setTotalUsedPoint(rs.getInt("total_used_point"));
-            user.setTotalPoint(rs.getInt("total_point"));
-            user.setPoint(rs.getInt("point"));
-
-            return user;
-        }, userNo);
-    }
-
-    public void updateUser(User user) {
-        String sql = """
-                UPDATE USERS
-                SET USER_EMAIL = ?
-                    , USER_TEL = ?
-                WHERE USER_NO = ?
-                """;
-        DaoHelper.update(sql, user.getEmail()
-                            , user.getTel()
-                            , user.getNo());
-    }
-
-    public int getPointStatusByUserNo(int userNo) {
-        String sql = """
-                SELECT POINT
-                FROM USERS
-                WHERE USER_NO = ?
-                """;
-        return DaoHelper.selectOneInt(sql, userNo);
-    }
-=======
             user.setPoint(rs.getInt("point"));
             user.setCreatedDate(rs.getDate("created_date"));
             user.setGradeId(rs.getString("grade_id"));
@@ -116,5 +41,4 @@ public class UserDao {
 
         }, id);
     }
->>>>>>> f12f52923fc0337784d64a394cd8d1081f88f47a
 }
