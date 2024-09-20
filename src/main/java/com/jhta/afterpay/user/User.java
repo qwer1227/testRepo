@@ -1,5 +1,7 @@
 package com.jhta.afterpay.user;
 
+
+import java.awt.*;
 import java.util.Date;
 
 public class User {
@@ -122,4 +124,5 @@ public class User {
                 ", gradeId='" + gradeId + '\'' +
                 '}';
     }
+
 }
