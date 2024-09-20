@@ -20,6 +20,20 @@ public class UserDao {
         DaoHelper.insert(sql, user.getEmail(), user.getId(), user.getPwd(), user.getName(), user.getTel());
     }
 
+    public User getUserIdByEmailAndName(String email, String name) throws SQLException {
+        String sql = """
+                select *
+                from users
+                where user_email = ? and user_name = ?
+                """;
+
+        return DaoHelper.selectOne(sql, rs -> {
+            User user = new User();
+            user.setId(rs.getString("user_id"));
+            return user;
+        }, email,name);
+    }
+
     public User getUserById(String id) throws SQLException {
         String sql = """
                 select *
